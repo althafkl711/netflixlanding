@@ -1,0 +1,456 @@
+:root{
+    --primary-color: #e50914;
+    --dark-colour: black;
+}
+*{ box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica,Helvetica Neue, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	background: rgb(51, 49, 49);
+	color: #999;
+}
+img{
+    width: 100%;
+}
+
+.main{
+    background: url("../mainbg.jpg") no-repeat center center/cover;
+    background-color: black;
+    width: 100%;
+    height: 96.5vh;
+   position: relative;
+   border-bottom: 8px solid #222;
+   z-index: -2;
+  
+}
+@media (max-width: 600px) {
+    .main{
+       
+        height: 550px;
+    }
+    
+}
+@media (min-width: 600px) and (max-width:950px) {
+    .main{
+       
+        height: 80vh;
+    }
+    
+}
+.main::after{
+    content: '';
+    background: rgba(0, 0, 0, 0.588);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    box-shadow: inset 30px 50px 50px  black;
+}
+@media (max-width: 1900px) {
+	.main::after {
+		background: rgba(0, 0, 0, 0.6);
+		box-shadow: inset 5px 30px 950px 50px black;
+       }
+}
+.TopBox{
+    width: 100%;
+    height: 100px;
+    top: 5px;
+    padding: o;
+    align-items: baseline;
+   
+    position: relative;
+}
+
+.TopBox img{
+    top: 50%;
+    left: 130px;
+    position: absolute;
+    width: 13rem;
+    cursor: pointer;
+    opacity: 110%;
+    transform: translate(-50%,-50%);
+}
+@media (max-width:1024px){
+    .TopBox img{
+        width: 10rem;
+    }
+}
+.btnsignin{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    top: 50%;
+    right: 0;
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+   background-color:#e50914;
+   color: white;
+   text-align: center;
+   text-decoration: none;
+   position: absolute;
+   transform: translate(-50%,-50%);
+}
+.btnsignin:hover {
+    opacity: 75%;
+    cursor: pointer;
+}
+
+.content{
+    position: relative;
+    padding: 0;
+    height: 200px;
+    z-index: 2;
+    align-content: center;
+    align-items: center;
+    top: 15%;
+}
+    
+@media (max-width:600px) {
+    .content{
+       
+        height: 400px;
+    }
+}
+@media (max-width:1800px) {
+    .content{
+       
+    }
+}
+
+
+h1{
+    font-family: Arial, Helvetica,Helvetica Neue, sans-serif;
+    font-weight: 500;
+    
+    font-size: 65px ;
+    padding: 0% 15%;
+    color: white;
+     
+    top: 45%;
+    text-align: center;
+    
+}
+@media (max-width:760px) {
+    h1{
+font-size: 30px;
+    }
+}
+@media (min-width:761px) and (max-width:1023px) {
+    h1{
+font-size: 50px;
+  padding: 0%, 10%;
+    }
+}
+@media (min-width:1024px) {
+    h1{
+font-size: 60px;
+    padding: 0% 25 +%;
+    }
+}
+p{
+ color: white;
+ opacity: 120%;
+}
+.p1 {
+ font-size: 1.6rem;
+ letter-spacing: 1px;
+ top: 40%;
+ font-weight: 400;
+ text-align: center;
+}
+.p2{
+    font-size: 1.25rem;
+    text-align: center;
+}
+.getstarted{
+    background-color: white;
+    width: 700px;
+    outline: none;
+    border: none;
+    height: 70px;
+    justify-content: space-between;
+   display: flex;
+   flex-direction: row;
+   margin: 0% 50%;
+   align-content: center;
+   transform: translate(-50%, 0%);
+  
+}
+.email{
+    padding: 10px 20px;
+   border-radius: 3px ;
+   outline: none;
+   border: none;
+    cursor: pointer;
+    font-size: 18px;
+    width: 600px;
+}
+.button{
+    padding: 15px 20px;
+    height: 70px;
+    text-decoration: none;
+       white-space: nowrap;
+    float: left;
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    margin-right: 0;
+
+}
+@media (max-width:600px) {
+    .button{
+       height: 40px;
+       padding: 0px 20px;
+      
+      margin-top: 20px;
+      font-size: 25px; 
+      font-weight: 400;
+    }  }   
+
+@media (max-width:760px) {
+    .getstarted{
+        height: 120px;
+        width: 500px;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        
+    } 
+    .button{
+        font-size: 25px;
+        padding: 10px 15px;
+        border-radius: 3px;
+        height: 50px;
+    }
+    .email{
+        width: 400px;
+        padding:15px 20px;
+   }
+}
+   @media (max-width:950px) and (min-width:761px){
+    
+    .getstarted{
+        height: 120px;
+        width: 300px;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        
+    } 
+    .button{
+        font-size: 25px;
+        padding: 10px 15px;
+        border-radius: 3px;
+        height: 50px;
+    }
+    .email{
+        width: 500px;
+        padding:15px 20px;
+   }
+   @media (min-width:1020px) {
+    .email{
+       height: 70px;
+       width: 400px;
+    }   
+   }
+   }
+   .tab1 {
+    width: 100%;
+    height:480px ;
+    border-bottom: 8px solid #222;
+    background-color: var(--dark-colour);
+}
+   .tab1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+   }
+   
+
+      .animation{
+    width: 45%;
+    height:480px;
+    padding: 0px 0px 0px 50px;
+    position: relative;
+    
+    
+   }
+   .tab1-img {
+    position: relative;
+    width: 500px;
+    z-index: 5412;
+    background-color: transparent;
+   }
+   .discription{
+    width: 45%;
+    height: 480px;
+    align-items: center;
+    text-align: left;
+    padding: 140px 0px 20px 120px;
+   }
+   
+   .tab-head{
+    font-size: 50px;
+    font-weight: 600;
+    white-space: nowrap;
+    text-align: left;
+    padding-left: 0px;
+   }
+   .tab-para{
+    font-size: 25px;
+    text-align: left;
+    padding-top: 10px;
+    font-weight: 400;
+   }
+   
+   .tab1-vid{
+    
+    z-index: 0;
+    padding: 0px 0px 0px 0px;
+    position: absolute;
+    transform: translate(69px, 82px);
+   }
+   .tab1-vid video{
+    width: 102%;
+    height: 200px;
+    padding: 0px 0px 0px 0px;
+   }
+   section:nth-child(odd) .discription{
+    order: 2;
+    padding-left: 0px;
+     padding-right: 0px;
+     margin-right: 0px;
+
+   }
+   section:nth-child(odd) .discription h1{
+    white-space: pre-line;
+   }
+   .tab3-img {
+    position: relative;
+    width: 500px;
+    z-index: 5412;
+    background-color: transparent;
+    transform: translate(0px, 57px);
+   }
+   .tab3-vid{
+    
+    z-index: 0;
+    padding: 0px 0px 0px 0px;
+    position: absolute;
+    transform: translate(96px, 73px);
+   }
+   .tab3-vid video{
+    width: 85%;
+    height: 200px;
+    padding: 0px 0px 0px 0px;
+   }
+   @media (max-width:1024px){
+    .tab1{
+       height: fit-content;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+      
+        padding: 0;
+
+    }
+    section:nth-child(odd) .discription{
+        order: 0;
+        padding-left: 0px;
+        
+       }
+       .discription{
+        width: 100%;
+        height:150px;
+        padding: 0%;
+        padding-top: 30px;
+        align-content: center;
+       text-align: center;
+       }
+       .tab-head{
+        white-space: nowrap;
+        text-align: center;
+        font-size: 30px;
+        padding: 0;
+       }
+       .tab-para{
+        
+        padding: 0px 100px;
+        text-align: center;
+        
+       
+        }
+        .animation{
+            width: 100%;
+          
+            position: relative;
+            align-content: center;
+            align-items: center;
+            padding: 0;
+            padding: 0;
+            margin: 0;
+            background-color: #e50914;
+        }
+        .tab1-img{
+            max-width: 100%;
+            height: auto;
+            min-width: 100%;
+            position: absolute;
+        }
+        .tab1-vid{
+            max-width: 100%;
+            height: auto;
+            position: sticky;
+           
+        }
+
+   }
+   @media (max-width:550px) {
+    .tab-para{
+        
+        padding: 0px 10px;
+        text-align: center;
+        
+       
+        }
+        .discription{
+            width: 100%;
+            height: fit-content;
+        }
+        .animation{
+           
+            position: relative;
+            padding: 20px;
+            margin: 0;
+            align-items: center;
+        }
+        .animation img{
+            width: 80%;
+            position: absolute;
+            transform: translate(10%, 10%);
+           
+        }
+        .tab1-vid{
+            max-width: 100%;
+            height: auto;
+            position: absolute;
+           
+        }
+        .tab3-vid video{
+            width: 73%;
+            padding: 0;
+            transform: translate(10px, 10px);
+        }
+    
+   }
